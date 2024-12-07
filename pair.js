@@ -62,7 +62,7 @@ router.get('/', async (req, res) => {
 
                             // Send follow-up message
                             await DataMateSessionGenarator.sendMessage(userJid, {
-                                text: "Don't send this file to anyone. Upload this file to `auth_info_baileys` in your bot repository.",
+                                text: "❌ Don't send this file to anyone. \n\n - Upload this file to `session_file_here` in your bot repository. \n\n > DataMate Inc",
                                 contextInfo: { quotedMessage: credsMessage.message }, // Reply to creds.json
                             });
                         }
